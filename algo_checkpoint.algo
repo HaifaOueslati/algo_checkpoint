@@ -1,0 +1,23 @@
+ALGORITHM chekpoint
+VAR
+characters: INTEGER :=0
+space: INTEGER :=0
+vowel: INTEGER :=0
+str : STRING
+
+BEGIN
+i:=0
+for i from 1 to lengh(str) do 
+i:= i+1
+IF (str[i]:= STRING)THEN
+characters++
+END_IF
+IF (str[i]:= " ")THEN
+space++
+END_IF
+IF (str[i] in ["a","e","y","o","u","i"])THEN
+vowel++
+END_IF
+END_FOR
+
+END
