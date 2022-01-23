@@ -1,23 +1,22 @@
 ALGORITHM chekpoint
 VAR
 characters: INTEGER :=0
-space: INTEGER :=0
+word: INTEGER :=0
 vowel: INTEGER :=0
 str : STRING
-
 BEGIN
-i:=0
-for i from 1 to lengh(str) do 
-i:= i+1
-IF (str[i]:= STRING)THEN
-characters++
+for characters from 0 to length(str)-1 do 
+IF (str[characters]:= " ")THEN
+word++
 END_IF
-IF (str[i]:= " ")THEN
-space++
-END_IF
-IF (str[i] in ["a","e","y","o","u","i"])THEN
+IF (str[characters] in ["a","e","o","u","i"])THEN
 vowel++
 END_IF
+characters++
 END_FOR
+word++
+write(characters);
+write(word);
+write(vowel);
 
 END
